@@ -1,0 +1,125 @@
+/* Alphabet listing*/
+/* Tips and Trics HQ (http://tipsandtricks-hq.com/) */
+	
+#wp-alphabet-listing section:first-child:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+#wp-alphabet-listing {
+	float: left;
+	margin: 0 14px 14px 0;
+	width: 659px;	
+}
+	#wp-alphabet-listing section {
+		background-color: #f0f0f0; /*change this for background color*/
+		margin-top: 14px;
+		padding: 17px;
+	}
+		#wp-alphabet-listing section h1 {
+			color: #424242;
+			font-size: 1.34em; /* 16px */
+			margin-bottom: .5em;
+			text-shadow: 0 1px 1px #fff;
+		}
+		#wp-alphabet-listing section:first-child h1 {
+			border-bottom: 1px solid #dfdfdf;
+			padding-bottom: .5em;
+		}
+		#wp-alphabet-listing section ul {margin: 0;}
+			#wp-alphabet-listing section ul li {
+				background: none;
+				border-top: 1px solid #dfdfdf;
+				padding: .3em 0;
+			}
+				#wp-alphabet-listing section li img {
+					margin-right: 3px;
+					vertical-align: middle;
+				}
+				
+/* Index */
+#wp-alphabet-listing section:first-child ol {
+	background-color: #fff;
+	border-left: 1px solid #dfdfdf;
+	float: left;
+	list-style: none;
+	margin: 0;
+}
+	#wp-alphabet-listing section:first-child ol li {
+		background: #fff url("../images/bg-az-index.png") repeat-x 0 100%;
+		border-right: 1px solid #dfdfdf;
+		border-bottom: 1px solid #f0f0f0;
+		border-top: 1px solid #f0f0f0;
+		float: left;
+		padding: 0;
+		position: relative;
+		width: 38px;
+		z-index: 1;
+		list-style: none;
+		
+	}
+	#wp-alphabet-listing section:first-child ol li:hover,
+	#wp-alphabet-listing section:first-child ol li:focus {z-index: 20;}
+		#wp-alphabet-listing section:first-child ol li a {
+			color: #424242; /* to change color of a-z */
+			display: block;
+			/*font-size: 1.17em;*/
+			font-weight: bold;
+			padding: .2em 0;
+			text-align: center;
+		}
+		#wp-alphabet-listing section:first-child ol li:hover a,
+		#wp-alphabet-listing section:first-child ol li:focus a {
+			background-color: #dfdfdf;
+			text-decoration: none;
+			text-shadow: 0 1px 0 #fff;
+		}
+	/* Popup */
+	#wp-alphabet-listing section:first-child ol div {
+		background: url("../images/bg-az-index-pop.png") no-repeat 0 0;
+		display: none;
+		padding-top: 8px;
+		position: absolute;
+		left: -25px;
+		top: 1.7em;
+		width: 300px;
+		z-index: 2000;
+	}
+	#wp-alphabet-listing section:first-child ol li:hover div,
+	#wp-alphabet-listing section:first-child ol li:focus div {display:block;}
+		#wp-alphabet-listing section:first-child ol ul {
+			background: #E8E8E8;
+			border: solid #bbbb80;
+			border-width: 0 1px 1px;
+			font-size: .86em;
+			margin: 0;
+			padding: 6px 12px;
+			-moz-box-shadow: 2px 4px 4px #999999;
+			-webkit-box-shadow: 2px 4px 4px #999999;
+			box-shadow: 2px 4px 4px #999999;
+			height:70px;
+			overflow-x:hidden;
+		}
+			#wp-alphabet-listing section:first-child ol ul li {
+				background: none;
+				border: none;
+				float: none;
+				padding: .1em 0;
+				width: 166px;
+			}
+				#wp-alphabet-listing section:first-child ol li:hover ul a,
+				#wp-alphabet-listing section:first-child ol li:focus ul a,
+				#wp-alphabet-listing section:first-child ol ul a {
+					background: none;
+					color: #424242;
+					display: inline;
+					font-weight: normal;
+					text-shadow: none;
+				}
+				#wp-alphabet-listing section:first-child ol ul a:hover,
+				#wp-alphabet-listing section:first-child ol ul a:focus {text-decoration: underline;}
+				
